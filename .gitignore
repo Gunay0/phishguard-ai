@@ -1,0 +1,36 @@
+# --- Secrets (NEVER commit these) ---
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+# --- Python virtual environment ---
+.venv/
+venv/
+env/
+# --- Python cache and build files ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+# --- Test and tooling caches ---
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+# --- Streamlit local secrets ---
+.streamlit/secrets.toml
+# --- Logs and local data (the app must not store analyzed messages) ---
+*.log
+logs/
+data/
+*.sqlite
+*.db
+# --- Editor and OS files ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
